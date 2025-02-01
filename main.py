@@ -109,7 +109,7 @@ import numpy as np
 #task3
 # g = np.linspace(0, 0.9,10)
 # print(g)
-
+#
 # #task4
 # def gener_new_matrix(matrix):
 #     n = matrix.shape[0]
@@ -117,15 +117,62 @@ import numpy as np
 #     new_matrix[1: n+1, 1: n+1] = matrix
 #     return new_matrix
 # matrix=np.array([[1,2],[3,4]])
-# print(gener_new_matrix(matrix))
+#
+# #task5
+# n = gener_new_matrix(matrix)
+# n
+# print(n.dtype)
+#
+# n_float = n.astype('float32')
+# n_float
+# print(n_float.dtype)
 
+#task6
+#
+# x = np.array([1, 5, 3, 8, 6, 5, 7, 4])
+# var = 5
+# x[x == var] = -1
+#
+# x[x > var] = -1
+#
+# x[x < var] = -1
 
+#task7
+# X = np.array([[1, 2, np.nan, 4],
+#               [5, np.nan, np.nan, 4],
+#               [np.nan, 10, 11, np.nan]])
+# X[np.isnan(X)] = -1
+# print(X)
 
+# #task8
+# arr = np.random.randint(1, 100,(4,6))
+# arr.reshape(3,8)
 
+#task9
+# arr = np.random.randint(1, 100,(3,4))
+# print(arr)
+#
+# x1 = arr[:, 0]
+# resx1 = np.mean(x1)
+# print(resx1)
+# x2 = arr[:, 1]
+# resx2 = np.mean(x2)
+#
+# x3 = arr[:, 2]
+# resx3 = np.mean(x3)
+#
+# x4 = arr[:, 3]
+# resx4 = np.mean(x4)
 
-
-
-
+#task10
+# x = np.array([[0.2 , 0.3 , 0.23, 0.07, 0.03, 0.17],
+#               [0.15, 0.06, 0.21, 0.12, 0.24, 0.24],
+#               [0.1 , 0.21, 0.03, 0.07, 0.31, 0.28],
+#               [0.21, 0.24, 0.03, 0.18, 0.12, 0.21],
+#               [0.19, 0.25, 0.25, 0.06, 0.12, 0.12]])
+#
+# max_indices = np.argmax(x, axis=1)
+# max_indices
 
 
 
